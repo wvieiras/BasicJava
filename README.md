@@ -174,9 +174,45 @@ Estrutura opcional ao if-else quando se deseja decidir um **VALOR** com base em 
 ### Escopo
 [escopo de variavel](https://medium.com/@mauriciogeneroso/java-oca-1z0-808-1-4-java-b%C3%A1sico-escopo-de-vari%C3%A1veis-3e652ac873e)
 
+# Estrutura de repetição
 
+### Enquanto - while
 
+É uma **estrutura de controle** que **repete** um bloco de comandos **enquanto** uma condição for verdadeira. 
+Quando usar: quando **não** se sabe previamente a quantidade de repetições que será realizada.
 
+- Sintaxe:
+```
+while ( condição ) {
+    comando 1
+    comando 2
+}
+```
+
+### Para - for
+
+É uma estrutura de **controle que repete** um bloco de comandos para um certo intervalo de valores. 
+Quando usar: quando **se sabe previamente** a quantidade de repetições, ou o intervalo de valores.
+
+- Sintaxe
+```
+for ( início ; condição ; incremento) {
+    comando 1
+    comando 2
+}
+```
+### Faça/Enquanto - Do/While
+
+Menos utilizada, mas em alguns casos se encaixa melhor ao problema.
+O bloco de comandos executa pelo menos uma vez, pois a condição é verificada no final.
+
+- Sintaxe
+```
+do {
+  comando 1
+  comando 2
+} while ( condição );
+```
 
 
 
