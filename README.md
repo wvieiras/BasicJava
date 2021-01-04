@@ -214,12 +214,35 @@ do {
 } while ( condição );
 ```
 
+# Programação Orientada a Objetos (POO)
+
+Programação Orientada a Objetos é um paradigma muito utilizado na programação, pois facilita a compreensão do código através de classes e objetos,
+que pode conter caracteristica em forma de campo conhecido como atributo e procedimento conhecido como métodos.
 
 
+## Classe
 
+Uma classe é um elemento do código Java que utilizamos para representar objetos do mundo real. 
+Dentro dela é comum declararmos atributos e métodos, que representam, respectivamente, as características e comportamentos desse objeto. 
+Neste documento será apresentado como declarar e utilizar uma classe em Java.
 
+### É um tipo estruturado que pode conter (membros):
+- Atributos (dados / campos)
+- Métodos (funções / operações)
 
+### A classe também pode prover muitos outros recursos, tais como:
+- Construtores
+- Sobrecarga
+- Encapsulamento
+- Herança
+- Polimorfismo
 
+### Sintaxe
+```
+<modificador de acesso> class NomeDaClasse {
+  //Local onde atributos, construtores e métodos são criados.
+}
+```
 
 
 
