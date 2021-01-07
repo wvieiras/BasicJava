@@ -214,6 +214,116 @@ do {
 } while ( condição );
 ```
 
+# Programação Orientada a Objetos (POO)
+
+Programação Orientada a Objetos é um paradigma muito utilizado na programação, pois facilita a compreensão do código através de classes e objetos,
+que pode conter caracteristica em forma de campo conhecido como atributo e procedimento conhecido como métodos.
+
+
+## Classe
+
+Uma classe é um elemento do código Java que utilizamos para representar objetos do mundo real. 
+Dentro dela é comum declararmos atributos e métodos, que representam, respectivamente, as características e comportamentos desse objeto. 
+Neste documento será apresentado como declarar e utilizar uma classe em Java.
+
+### É um tipo estruturado que pode conter (membros):
+- Atributos (dados / campos)
+- Métodos (funções / operações)
+
+### A classe também pode prover muitos outros recursos, tais como:
+- Construtores
+- Sobrecarga
+- Encapsulamento
+- Herança
+- Polimorfismo
+
+### Sintaxe
+```
+<modificador de acesso> class NomeDaClasse {
+  //Local onde atributos, construtores e métodos são criados.
+}
+```
+## Object e toString
+
+Toda Classe em Java é uma subclasse da classe Object
+
+A classe Object possui os seguntes métodos:
+- getClass - retorna o tipo do objeto
+- equals - compara se o objeto é igual a outro
+- hashCode - retorna um código hash do objeto
+- toString - converte o objeto para String
+
+## Membros estáticos
+
+- Para constantes utilizar a palavra "final" e utilizar letras maiúsculas com "_" separando as palavras.
+
+- O método "main" por padrão é static.
+
+- Não posso colocar um método que não é estático em um estático.
+
+- Com o modificador static não precisa de uma instância da classe "objeto", para poder acessar um método ou variável.
+
+- Conhecida como classe utilitária
+
+- Um recurso que pode ser usado
+
+[para saber mais sobre classes estáticas](https://pt.stackoverflow.com/questions/90047/principal-objetivo-de-classes-utilit%C3%A1rias#:~:text=Classes%20utilit%C3%A1rias%20organizam%20c%C3%B3digo%2C%20separam,projeto%20criando%20uma%20classe%20utilit%C3%A1ria.)
+
+## Construtores
+
+Os construtores são responsáveis por criar o objeto em memória, ou seja, instanciar a classe que foi definida. 
+Eles são obrigatórios e são declarados conforme a sintaxe abaixo:
+
+```
+public class Carro{
+
+    /* CONSTRUTOR DA CLASSE Carro */
+    public Carro(){
+        //Faça o que desejar na construção do objeto
+    }
+}
+```
+
+- É uma operação especial da classe, que executa no momento da instanciação do objeto,
+
+### Usos Comuns
+- Iniciar valores dos atributos.
+- Permitir ou obrigar que o objeto receba dados / dependência no momento da sua instanciação (injeção de dependência).
+- Se um construtor customizado não for especificado, a classe disponibiliza o construtor padrão:
+```
+Product p = new Product()
+```
+- É possível especificar mais de um construtor na mesma classe (sobrecarga).
+
+## Palavra this
+
+- É uma referência para o próprio Objeto
+
+### Uso comuns
+- Diferenciar atributos de variáveis locais.
+- Passar o próprio objeto como argumento de um método ou construtor.
+
+## Encapsulamento
+
+É um princípio que consiste em esconder detalhes de implementação de uma classe, expondo apenas operações seguras e que mantenham os objetos em um estado consistente.
+
+**Regra de ouro: o objeto deve sempre  estar em um estado consistente, e a própria classe deve garantir isso.**
+
+### Regra geral básica
+- Um objeto NÃO deve expor nenhum atributo (modificador de acesso private).
+- Os atributos devem ser acessados por meio de métodos get e set. [Padrão JavaBeans] (https://en.wikipedia.org/wiki/JavaBeans)
+
+## Modificadores de acesso
+
+- https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+- **private:** o membro só pode ser acessado na própria classe.
+- **(nada):** o membro só pode ser acessado nas classes do mesmo pacote.
+- **protected:** o membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes diferentes.
+- **public:** o membro é acessado por todas classes (ao menos que ele resida em um módulo diferente que não exporte o pacote onde ele está).
+*****
+
+### Imagem de exemplo:
+![Modificadores](https://github.com/wvieiras/BasicJava/blob/main/modificadores.png)
 
 
 
