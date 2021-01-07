@@ -1,7 +1,7 @@
 package entities;
 
 public class Conta {
-	//Attribute
+	//Attributes
 	private int numeroConta;
 	private String nomeTitular;
 	private double depositoInicial;
